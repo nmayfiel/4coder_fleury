@@ -460,6 +460,15 @@ typedef int socklen_t;
 
 //~ NOTE(rjf): @f4_custom_layer_initialization
 
+#include "../nix_startup.cpp"
+#include "../nix_command_lister.cpp"
+#include "../nix_institution_header.cpp"
+#include "../nix_new_file_hook.cpp"
+#include "../nix_get_buffers_opened_first.cpp"
+#include "../nix_kill_buffer.cpp"
+#include "../nix_reload_changed_buffers.cpp"
+#include "../nix_rectangle_edit.cpp"
+
 void custom_layer_init(Application_Links *app)
 {
     default_framework_init(app);
